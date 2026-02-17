@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Galerie | Hôtel Soleil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="index.html">Hôtel Soleil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="hotel.html">L’Hôtel</a></li>
+        <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="offres.html">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-warning fw-semibold" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Réserver maintenant
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero d-flex align-items-center text-white text-center">
+  <div class="container hero-content text-center text-white">
+    <h1 class="display-5 fw-bold">Galerie</h1>
+    <p class="lead mt-3">
+      Découvrez l’atmosphère et les espaces de l’Hôtel Soleil
+    </p>
+  </div>
+</header>
+
+<!-- GALERIE PRINCIPALE -->
+<section class="section-padding">
+  <div class="container">
+
+    <h2 class="section-title text-center mb-4">
+      L’hôtel en images
+    </h2>
+
+    <!-- Carrousel principal -->
+    <div id="galleryCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+  <div class="carousel-inner rounded-4 shadow">
+
+    <div class="carousel-item active">
+      <img src="https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="d-block w-100"
+           alt="Vue extérieure de l’Hôtel Soleil">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://plus.unsplash.com/premium_photo-1670360414903-19e5832f8bc4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="d-block w-100"
+           alt="Chambres de l’Hôtel Soleil">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1667125095636-dce94dcbdd96?q=80&w=852&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="d-block w-100"
+           alt="Restaurant de l’Hôtel Soleil">
+    </div>
+
+    <div class="carousel-item">
+      <img src="https://images.unsplash.com/photo-1549638441-b787d2e11f14?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+           class="d-block w-100"
+           alt="Espaces communs de l’Hôtel Soleil">
+    </div>
+
+  </div>
+
+  <!-- Flèche gauche -->
+  <button class="carousel-control-prev" type="button"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <!-- Flèche droite -->
+  <button class="carousel-control-next" type="button"
+          data-bs-target="#galleryCarousel"
+          data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+
+  </div>
+</section>
+
+<!-- GALERIE PAR CATÉGORIES -->
+<section class="bg-soft section-padding">
+  <div class="container">
+
+    <h2 class="section-title text-center mb-4">
+      Nos espaces
+    </h2>
+
+    <!-- Filtres / catégories -->
+    <div class="text-center mb-4">
+      <button class="btn btn-outline-primary m-1">Chambres</button>
+      <button class="btn btn-outline-primary m-1">Restaurant</button>
+      <button class="btn btn-outline-primary m-1">Espaces communs</button>
+      <button class="btn btn-outline-primary m-1">Extérieur</button>
+    </div>
+
+    <!-- Grille images -->
+    <div class="row g-3">
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1661875135365-16aab794632f?q=80&w=953&auto=format&fit=crop"
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1631049421450-348ccd7f8949?q=80&w=1170&auto=format&fit=crop"
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/flagged/photo-1556438758-8d49568ce18e?q=80&w=1174&auto=format&fit=crop"
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://plus.unsplash.com/premium_photo-1661962493427-910e3333cf5a?q=80&w=880&auto=format&fit=crop"
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://images.unsplash.com/photo-1587985064135-0366536eab42?q=80&w=1170&auto=format&fit=crop"
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class="gallery-item">
+      <img src="https://media.istockphoto.com/id/1030211274/photo/bedroom-interior-3d-illustration.jpg?s=1024x1024&w=is&k=20&c=ro9CFCX5kdJqyPqZcWxsrbISCGgH4QV-1gnJ6Uvm_pA="
+           alt="Chambre de l’Hôtel Soleil">
+    </div>
+  </div>
+
+</div>
+
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section text-center text-white">
+  <div class="container">
+    <h2 class="fw-bold">Envie de séjourner à l’Hôtel Soleil ?</h2>
+    <p class="mt-3">Contactez-nous ou réservez votre chambre dès maintenant</p>
+
+    <a href="#" class="btn btn-light btn-lg mt-3">Réserver</a>
+    <a href="#" class="btn btn-success btn-lg mt-3 ms-2">WhatsApp</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container text-center">
+    <p class="mb-0">© 2026 Hôtel Soleil — Prototype pour entreprises locales</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
