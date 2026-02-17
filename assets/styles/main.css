@@ -193,3 +193,12 @@ footer p {
     font-size: 2rem;
   }
 }
+.carousel-inner img {
+  height: 420px;
+  object-fit: cover;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: brightness(0) invert(1);
+}
