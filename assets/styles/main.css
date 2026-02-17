@@ -78,6 +78,22 @@ p {
 }
 
 /* -------- HERO -------- */
+.hero {
+  height: 100vh;
+  background: url("../../assets/img/hotel/vije-vijendranath-GvcIU5xs7mQ-unsplash.jpg")
+    center/cover no-repeat;
+  position: relative;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
 .hero h1,
 .hero p {
   color: #ffffff;
