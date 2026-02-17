@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Hôtel Soleil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS personnalisé -->
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="index.html">Hôtel Soleil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="hotel.html">L’Hôtel</a></li>
+        <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="offres.html">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-warning fw-semibold" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Réserver maintenant
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO CONTACT ===== -->
+<header class="hero d-flex align-items-center text-white text-center">
+  <div class="container hero-content text-center text-white">
+    <h1 class="display-5 fw-bold">Contactez-nous</h1>
+    <p class="lead mt-3">Nous sommes à votre écoute</p>
+  </div>
+</header>
+
+<!-- ===== SECTION CONTACT ===== -->
+<section class="py-5">
+  <div class="container">
+
+    <div class="row g-5">
+
+      <!-- FORMULAIRE -->
+      <div class="col-lg-6">
+        <h2 class="section-title mb-4">Envoyez-nous un message</h2>
+
+        <form>
+          <div class="mb-3">
+            <label class="form-label">Nom complet</label>
+            <input type="text" class="form-control" placeholder="Votre nom">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Adresse email</label>
+            <input type="email" class="form-control" placeholder="exemple@email.com">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Téléphone</label>
+            <input type="tel" class="form-control" placeholder="+225 xx xx xx xx">
+          </div>
+
+          <div class="mb-3">
+            <label class="form-label">Message</label>
+            <textarea class="form-control" rows="5" placeholder="Votre message..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg">
+            Envoyer le message
+          </button>
+        </form>
+      </div>
+
+      <!-- INFOS + CARTE -->
+      <div class="col-lg-6">
+        <h2 class="section-title mb-4">Nos coordonnées</h2>
+
+        <div class="contact-info mb-4">
+          <p><strong>📍 Adresse :</strong><br>
+            Quartier Central, Abidjan, Côte d’Ivoire
+          </p>
+
+          <p><strong>📞 Téléphone :</strong><br>
+            +225 01 02 03 04 05
+          </p>
+
+          <p><strong>✉️ Email :</strong><br>
+            contact@hotelsoleil.com
+          </p>
+          <a href="https://wa.me/2250102030405?text=Bonjour%20je%20souhaite%20avoir%20des%20informations%20sur%20votre%20hôtel" target="_blank" class="btn btn-whatsapp btn-lg w-100">
+            💬 Discuter sur WhatsApp
+        </a>
+        </div>
+
+        <!-- CARTE GOOGLE MAPS -->
+        <div class="map-container rounded-4 overflow-hidden shadow">
+          <iframe
+            src="https://www.google.com/maps?q=Abidjan&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container text-center">
+    <p class="mb-0">© 2026 Hôtel Soleil — Prototype pour entreprises locales</p>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -202,3 +202,60 @@ footer p {
 .carousel-control-next-icon {
   filter: brightness(0) invert(1);
 }
+
+.hero-contact {
+  height: 50vh;
+  background: url("../images/hero/contact.jpg") center/cover no-repeat;
+  position: relative;
+}
+
+.contact-info p {
+  font-size: 1.05rem;
+}
+
+.map-container iframe {
+  width: 100%;
+  border-radius: 1rem;
+}
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1ebe5d;
+  color: #fff;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 211, 102, 0.35);
+}
+.hero-rooms {
+  height: 55vh;
+  background: url("../images/hero/rooms.jpg") center/cover no-repeat;
+}
+
+.room-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.room-features {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.room-features li {
+  margin-bottom: 0.4rem;
+}
+
+.room-price {
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+}
+
+.border-highlight {
+  border: 2px solid var(--primary-color);
+}

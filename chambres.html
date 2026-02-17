@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Chambres | Hôtel Soleil</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="index.html">Hôtel Soleil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="hotel.html">L’Hôtel</a></li>
+        <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="offres.html">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-warning fw-semibold" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Réserver maintenant
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<header class="hero d-flex align-items-center text-white text-center">
+  <div class="container hero-content text-center text-white">
+    <h1 class="display-5 fw-bold">Nos chambres</h1>
+    <p class="lead mt-3">
+      Confort, élégance et sérénité pour un séjour parfait
+    </p>
+  </div>
+</header>
+
+<!-- ===== LISTE DES CHAMBRES ===== -->
+<section class="py-5">
+  <div class="container">
+
+    <div class="row g-4">
+
+      <!-- Chambre Standard -->
+      <div class="col-md-4">
+        <div class="card room-card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1631049552057-403cdb8f0658?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Chambre Standard">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Chambre Standard</h5>
+            <p class="card-text">
+              Idéale pour un séjour confortable à prix accessible.
+            </p>
+
+            <ul class="room-features">
+              <li>Lit double</li>
+              <li>Climatisation</li>
+              <li>Wi-Fi gratuit</li>
+              <li>Salle de bain privée</li>
+            </ul>
+
+            <div class="mt-auto">
+              <p class="room-price">À partir de <strong>35 000 FCFA / nuit</strong></p>
+              <a href="#" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chambre Supérieure -->
+      <div class="col-md-4">
+        <div class="card room-card h-100 shadow-sm">
+          <img src="https://images.unsplash.com/photo-1568495248636-6432b97bd949?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Chambre Supérieure">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Chambre Supérieure</h5>
+            <p class="card-text">
+              Plus d’espace et de confort pour un séjour agréable.
+            </p>
+
+            <ul class="room-features">
+              <li>Lit Queen Size</li>
+              <li>Bureau & coin salon</li>
+              <li>TV écran plat</li>
+              <li>Mini-bar</li>
+            </ul>
+
+            <div class="mt-auto">
+              <p class="room-price">À partir de <strong>50 000 FCFA / nuit</strong></p>
+              <a href="#" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Suite -->
+      <div class="col-md-4">
+        <div class="card room-card h-100 shadow-sm border-highlight">
+          <img src="https://images.unsplash.com/photo-1566665797739-1674de7a421a?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="card-img-top" alt="Suite">
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title">Suite</h5>
+            <p class="card-text">
+              Luxe et élégance pour une expérience haut de gamme.
+            </p>
+
+            <ul class="room-features">
+              <li>Lit King Size</li>
+              <li>Salon privé</li>
+              <li>Baignoire</li>
+              <li>Vue panoramique</li>
+            </ul>
+
+            <div class="mt-auto">
+              <p class="room-price">À partir de <strong>85 000 FCFA / nuit</strong></p>
+              <a href="#" class="btn btn-primary w-100">Réserver</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ÉQUIPEMENTS COMMUNS ===== -->
+<section class="bg-light py-4">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="section-title">Équipements inclus</h2>
+    </div>
+
+    <div class="row text-center g-4">
+      <div class="col-md-3">📶 Wi-Fi haut débit</div>
+      <div class="col-md-3">❄️ Climatisation</div>
+      <div class="col-md-3">🧼 Service de ménage</div>
+      <div class="col-md-3">🔐 Sécurité 24h/24</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-section text-center text-white py-5">
+  <div class="container">
+    <h2 class="fw-bold">Réservez votre chambre dès aujourd’hui</h2>
+    <p class="mt-3">Des chambres confortables adaptées à tous les budgets</p>
+    <button class="btn btn-warning fw-semibold" data-bs-toggle="modal" data-bs-target="#reservationModal">
+        Réserver une chambre
+    </button>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="bg-dark text-white text-center py-4">
+  <div class="container text-center">
+    <p class="mb-0">© 2026 Hôtel Soleil — Prototype pour entreprises locales</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
