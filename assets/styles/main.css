@@ -1,0 +1,179 @@
+/* ======================================================
+   STYLE GLOBAL – PROTOTYPE HÔTELIER
+   Ambiance : chaleureuse, touristique, élégante
+   ====================================================== */
+
+/* -------- VARIABLES DE COULEURS -------- */
+:root {
+  --primary: #f4a261; /* orange chaleureux */
+  --secondary: #264653; /* bleu profond */
+  --dark: #1d3557;
+  --light: #f8f9fa;
+  --text: #333333;
+}
+
+/* -------- RESET & BASE -------- */
+body {
+  font-family:
+    "Poppins",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  color: var(--text);
+  line-height: 1.7;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--secondary);
+}
+
+p {
+  margin-bottom: 0.8rem;
+}
+
+/* -------- NAVBAR -------- */
+.navbar {
+  transition: background-color 0.3s ease;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: rgba(255, 255, 255, 0.85) !important;
+  margin: 0 0.4rem;
+}
+
+.nav-link:hover {
+  color: var(--primary) !important;
+}
+
+/* -------- BOUTONS -------- */
+.btn-warning {
+  background-color: var(--primary);
+  border: none;
+  color: #ffffff;
+}
+
+.btn-warning:hover {
+  background-color: #e76f51;
+}
+
+.btn-outline-warning {
+  border-color: var(--primary);
+  color: var(--primary);
+}
+
+.btn-outline-warning:hover {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* -------- HERO -------- */
+.hero h1,
+.hero p {
+  color: #ffffff;
+}
+
+.hero p {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* -------- SECTIONS -------- */
+section {
+  position: relative;
+}
+
+section h2 {
+  margin-bottom: 1rem;
+}
+
+.bg-light {
+  background-color: #fafafa !important;
+}
+
+/* -------- CARTES -------- */
+.card {
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.card-title {
+  color: var(--secondary);
+}
+
+/* -------- IMAGES -------- */
+img {
+  object-fit: cover;
+}
+
+/* -------- OFFRES -------- */
+.offre-box {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.offre-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* -------- FORMULAIRES -------- */
+.form-control,
+.form-select {
+  border-radius: 0.4rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 0.15rem rgba(244, 162, 97, 0.25);
+}
+
+/* -------- MODAL -------- */
+.modal-content {
+  border-radius: 0.7rem;
+}
+
+.modal-title {
+  color: var(--secondary);
+}
+
+/* -------- FOOTER -------- */
+footer {
+  font-size: 0.9rem;
+  background-color: var(--secondary);
+}
+
+footer p {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+  .hero {
+    height: 85vh;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+}
