@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nos Offres - Hôtel</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/styles/main.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand fw-bold" href="index.html">Hôtel Soleil</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainMenu">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="hotel.html">L’Hôtel</a></li>
+        <li class="nav-item"><a class="nav-link" href="chambres.html">Chambres</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="galerie.html">Galerie</a></li>
+        <li class="nav-item"><a class="nav-link" href="offres.html">Offres</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        <li class="nav-item ms-lg-3">
+          <button class="btn btn-warning fw-semibold" data-bs-toggle="modal" data-bs-target="#reservationModal">
+            Réserver maintenant
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- HERO -->
+<header class="hero d-flex align-items-center text-white text-center">
+  <div class="container hero-content">
+    <h1 class="display-4 fw-bold">Nos Offres</h1>
+    <p class="lead mt-3">Profitez de nos meilleures propositions du moment.</p>
+    <button class="btn btn-warning btn-lg mt-4" data-bs-toggle="modal" data-bs-target="#reservationModal">
+      Réserver maintenant
+    </button>
+  </div>
+</header>
+<!--fin HERO -->
+<!-- INTRO -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2>Des expériences exclusives</h2>
+    <p class="text-muted">
+      Découvrez nos offres spéciales conçues pour rendre votre séjour encore plus exceptionnel.
+    </p>
+  </div>
+</section>
+
+<!-- OFFRES -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row g-4">
+
+      <!-- OFFRE 1 -->
+      <div class="col-md-4">
+        <div class="card offer-card h-100 position-relative">
+          <span class="offer-badge">-20%</span>
+          <img src="https://media.istockphoto.com/id/827135348/photo/bottle-of-champagne-in-bed.jpg?s=612x612&w=0&k=20&c=u6Q1-IF9RxcwLvWWnrMfv7FRjcY6Q5pY5b51-wGOqH0=" class="card-img-top" alt="Offre romantique">
+          <div class="card-body text-center">
+            <h5 class="card-title">Escapade Romantique</h5>
+            <p class="card-text">
+              Une nuit en chambre deluxe avec dîner aux chandelles.
+            </p>
+
+            <ul class="offer-benefits">
+              <li>✔ Petit-déjeuner inclus</li>
+              <li>✔ Accès Spa</li>
+              <li>✔ Départ tardif</li>
+            </ul>
+
+            <p class="offer-validity">Valable jusqu’au 30 Juin</p>
+
+            <button class="btn btn-primary w-100">Réserver maintenant</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OFFRE 2 -->
+      <div class="col-md-4">
+        <div class="card offer-card h-100 position-relative">
+          <span class="offer-badge">-15%</span>
+          <img src="https://media.istockphoto.com/id/1453121684/photo/modern-hotel-room-with-double-bed-night-tables-and-day-sofa-bed.jpg?s=612x612&w=0&k=20&c=zIw8iR0vtQa19VQlrohzQEt7x-izuwP6JBjJY_68--8=" class="card-img-top" alt="Offre famille">
+          <div class="card-body text-center">
+            <h5 class="card-title">Séjour en Famille</h5>
+            <p class="card-text">
+              Profitez d’un séjour convivial adapté aux familles.
+            </p>
+
+            <ul class="offer-benefits">
+              <li>✔ Chambre familiale</li>
+              <li>✔ Activités enfants</li>
+              <li>✔ Annulation gratuite</li>
+            </ul>
+
+            <p class="offer-validity">Valable tout l’été</p>
+
+            <button class="btn btn-primary w-100">Réserver maintenant</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- OFFRE 3 -->
+      <div class="col-md-4">
+        <div class="card offer-card h-100 position-relative">
+          <span class="offer-badge">-25%</span>
+          <img src="https://media.istockphoto.com/id/2151936012/photo/businessman-working-in-hotel-room.jpg?s=612x612&w=0&k=20&c=5ZR2WNom_wWRqyQwDxQwm3lvKi7B1CSLeMWkgJSms4M=" class="card-img-top" alt="Offre business">
+          <div class="card-body text-center">
+            <h5 class="card-title">Séjour Business</h5>
+            <p class="card-text">
+              Idéal pour vos déplacements professionnels.
+            </p>
+
+            <ul class="offer-benefits">
+              <li>✔ Salle de réunion</li>
+              <li>✔ WiFi haut débit</li>
+              <li>✔ Petit-déjeuner express</li>
+            </ul>
+
+            <p class="offer-validity">Offre limitée</p>
+
+            <button class="btn btn-primary w-100">Réserver maintenant</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL -->
+<section class="py-5 text-center">
+  <div class="container">
+    <h2>Ne manquez pas ces opportunités</h2>
+    <p class="text-muted">Réservez dès aujourd’hui et profitez d’avantages exclusifs.</p>
+    <button class="btn btn-dark btn-lg">Voir toutes les chambres</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-4">
+  <p class="mb-0">&copy; 2026 – Prototype hôtelier. Tous droits réservés.</p>
+</footer>
+
+<script src="assets/styles/main.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -278,9 +278,119 @@ footer p {
   object-fit: cover; /* pas de déformation */
   display: block;
 }
-/*.gallery-item img {
-  width: 100%;
-  height: 230px;
+.services-hero {
+  background: url("images/hero-services.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+}
+
+.services-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.services-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.service-card img {
+  height: 220px;
   object-fit: cover;
-  border-radius: 12px;
-}*/
+}
+
+.service-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-box {
+  padding: 20px;
+}
+
+.highlight-service {
+  background: #1e293b;
+}
+.accordion-button {
+  font-weight: 600;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1e293b;
+  color: white;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+.offers-hero {
+  background: url("images/hero-offres.jpg") center/cover no-repeat;
+  height: 60vh;
+  position: relative;
+}
+
+.offers-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.offers-hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.offer-card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.offer-card {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.offer-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: crimson;
+  color: white;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+.offer-benefits {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.offer-benefits li {
+  margin-bottom: 5px;
+}
+
+.offer-validity {
+  font-size: 0.8rem;
+  color: #888;
+  margin-bottom: 15px;
+}
